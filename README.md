@@ -5,14 +5,15 @@ Very simple URL shortener - installation
 ```
 git clone https://github.com/kranon/monkeysdevs.git
 ```
-- Install project 
-```
-sh reinstall.sh
-```
 - Go to project directory
 ```
 cd /project/dir
 ``` 
+- Install project 
+```
+sh reinstall.sh
+```
+
 - Start server
 ```
 php bin/console server:start
