@@ -1,0 +1,4 @@
+services:
+#    monkeydevs_shortener.example:
+#        class: Monkeydevs\ShortenerBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

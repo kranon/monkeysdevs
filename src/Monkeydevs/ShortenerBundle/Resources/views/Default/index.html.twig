@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% if response is not empty %}
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <p>Your short URL: <a href="{{ response.shortUrl }}" target="_blank">{{ response.shortUrl }}</a></p>
+                <p>Your short URL statistic: <a href="{{ response.shortUrlStatistic }}" target="_blank">{{ response.shortUrlStatistic }}</a></p>
+            </div>
+        </div>
+    {% endif %}
+
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            {{ form_start(form) }}
+            {{ form_widget(form) }}
+            <input type="submit" class="btn btn-success" value="Shorten" />
+            {{ form_end(form) }}
+        </div>
+    </div>
+{% endblock %}
+
